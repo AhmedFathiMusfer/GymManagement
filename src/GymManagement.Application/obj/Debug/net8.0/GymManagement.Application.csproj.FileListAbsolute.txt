@@ -1,0 +1,15 @@
+E:\GymManagement\src\GymManagement.Application\bin\Debug\net8.0\GymManagement.Application.deps.json
+E:\GymManagement\src\GymManagement.Application\bin\Debug\net8.0\GymManagement.Application.dll
+E:\GymManagement\src\GymManagement.Application\bin\Debug\net8.0\GymManagement.Application.pdb
+E:\GymManagement\src\GymManagement.Application\bin\Debug\net8.0\GymManagement.Domain.dll
+E:\GymManagement\src\GymManagement.Application\bin\Debug\net8.0\GymManagement.Domain.pdb
+E:\GymManagement\src\GymManagement.Application\obj\Debug\net8.0\GymManagement.Application.csproj.AssemblyReference.cache
+E:\GymManagement\src\GymManagement.Application\obj\Debug\net8.0\GymManagement.Application.GeneratedMSBuildEditorConfig.editorconfig
+E:\GymManagement\src\GymManagement.Application\obj\Debug\net8.0\GymManagement.Application.AssemblyInfoInputs.cache
+E:\GymManagement\src\GymManagement.Application\obj\Debug\net8.0\GymManagement.Application.AssemblyInfo.cs
+E:\GymManagement\src\GymManagement.Application\obj\Debug\net8.0\GymManagement.Application.csproj.CoreCompileInputs.cache
+E:\GymManagement\src\GymManagement.Application\obj\Debug\net8.0\GymManag.E831DFE7.Up2Date
+E:\GymManagement\src\GymManagement.Application\obj\Debug\net8.0\GymManagement.Application.dll
+E:\GymManagement\src\GymManagement.Application\obj\Debug\net8.0\refint\GymManagement.Application.dll
+E:\GymManagement\src\GymManagement.Application\obj\Debug\net8.0\GymManagement.Application.pdb
+E:\GymManagement\src\GymManagement.Application\obj\Debug\net8.0\ref\GymManagement.Application.dll

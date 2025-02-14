@@ -1,0 +1,17 @@
+E:\GymManagement\src\GymManagement.Infrastructure\bin\Debug\net8.0\GymManagement.Infrastructure.deps.json
+E:\GymManagement\src\GymManagement.Infrastructure\bin\Debug\net8.0\GymManagement.Infrastructure.dll
+E:\GymManagement\src\GymManagement.Infrastructure\bin\Debug\net8.0\GymManagement.Infrastructure.pdb
+E:\GymManagement\src\GymManagement.Infrastructure\bin\Debug\net8.0\GymManagement.Application.dll
+E:\GymManagement\src\GymManagement.Infrastructure\bin\Debug\net8.0\GymManagement.Domain.dll
+E:\GymManagement\src\GymManagement.Infrastructure\bin\Debug\net8.0\GymManagement.Application.pdb
+E:\GymManagement\src\GymManagement.Infrastructure\bin\Debug\net8.0\GymManagement.Domain.pdb
+E:\GymManagement\src\GymManagement.Infrastructure\obj\Debug\net8.0\GymManagement.Infrastructure.csproj.AssemblyReference.cache
+E:\GymManagement\src\GymManagement.Infrastructure\obj\Debug\net8.0\GymManagement.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+E:\GymManagement\src\GymManagement.Infrastructure\obj\Debug\net8.0\GymManagement.Infrastructure.AssemblyInfoInputs.cache
+E:\GymManagement\src\GymManagement.Infrastructure\obj\Debug\net8.0\GymManagement.Infrastructure.AssemblyInfo.cs
+E:\GymManagement\src\GymManagement.Infrastructure\obj\Debug\net8.0\GymManagement.Infrastructure.csproj.CoreCompileInputs.cache
+E:\GymManagement\src\GymManagement.Infrastructure\obj\Debug\net8.0\GymManag.01D5B840.Up2Date
+E:\GymManagement\src\GymManagement.Infrastructure\obj\Debug\net8.0\GymManagement.Infrastructure.dll
+E:\GymManagement\src\GymManagement.Infrastructure\obj\Debug\net8.0\refint\GymManagement.Infrastructure.dll
+E:\GymManagement\src\GymManagement.Infrastructure\obj\Debug\net8.0\GymManagement.Infrastructure.pdb
+E:\GymManagement\src\GymManagement.Infrastructure\obj\Debug\net8.0\ref\GymManagement.Infrastructure.dll

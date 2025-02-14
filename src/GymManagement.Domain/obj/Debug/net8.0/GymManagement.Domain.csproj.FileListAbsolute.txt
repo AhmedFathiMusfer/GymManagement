@@ -1,0 +1,11 @@
+E:\GymManagement\src\GymManagement.Domain\bin\Debug\net8.0\GymManagement.Domain.deps.json
+E:\GymManagement\src\GymManagement.Domain\bin\Debug\net8.0\GymManagement.Domain.dll
+E:\GymManagement\src\GymManagement.Domain\bin\Debug\net8.0\GymManagement.Domain.pdb
+E:\GymManagement\src\GymManagement.Domain\obj\Debug\net8.0\GymManagement.Domain.GeneratedMSBuildEditorConfig.editorconfig
+E:\GymManagement\src\GymManagement.Domain\obj\Debug\net8.0\GymManagement.Domain.AssemblyInfoInputs.cache
+E:\GymManagement\src\GymManagement.Domain\obj\Debug\net8.0\GymManagement.Domain.AssemblyInfo.cs
+E:\GymManagement\src\GymManagement.Domain\obj\Debug\net8.0\GymManagement.Domain.csproj.CoreCompileInputs.cache
+E:\GymManagement\src\GymManagement.Domain\obj\Debug\net8.0\GymManagement.Domain.dll
+E:\GymManagement\src\GymManagement.Domain\obj\Debug\net8.0\refint\GymManagement.Domain.dll
+E:\GymManagement\src\GymManagement.Domain\obj\Debug\net8.0\GymManagement.Domain.pdb
+E:\GymManagement\src\GymManagement.Domain\obj\Debug\net8.0\ref\GymManagement.Domain.dll
