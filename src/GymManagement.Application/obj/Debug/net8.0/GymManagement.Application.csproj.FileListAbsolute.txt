@@ -13,3 +13,4 @@ E:\GymManagement\src\GymManagement.Application\obj\Debug\net8.0\GymManagement.Ap
 E:\GymManagement\src\GymManagement.Application\obj\Debug\net8.0\refint\GymManagement.Application.dll
 E:\GymManagement\src\GymManagement.Application\obj\Debug\net8.0\GymManagement.Application.pdb
 E:\GymManagement\src\GymManagement.Application\obj\Debug\net8.0\ref\GymManagement.Application.dll
+E:\GymManagement\src\GymManagement.Application\obj\Debug\net8.0\GymManagement.Application.sourcelink.json

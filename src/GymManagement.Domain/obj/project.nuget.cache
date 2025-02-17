@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "g+v41EtwUL8=",
+  "dgSpecHash": "u6SJH8FsIyU=",
   "success": true,
   "projectFilePath": "E:\\GymManagement\\src\\GymManagement.Domain\\GymManagement.Domain.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\AhmedMusfer\\.nuget\\packages\\ardalis.smartenum\\8.2.0\\ardalis.smartenum.8.2.0.nupkg.sha512"
+  ],
   "logs": []
 }

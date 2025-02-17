@@ -9,3 +9,5 @@ E:\GymManagement\src\GymManagement.Domain\obj\Debug\net8.0\GymManagement.Domain.
 E:\GymManagement\src\GymManagement.Domain\obj\Debug\net8.0\refint\GymManagement.Domain.dll
 E:\GymManagement\src\GymManagement.Domain\obj\Debug\net8.0\GymManagement.Domain.pdb
 E:\GymManagement\src\GymManagement.Domain\obj\Debug\net8.0\ref\GymManagement.Domain.dll
+E:\GymManagement\src\GymManagement.Domain\obj\Debug\net8.0\GymManagement.Domain.sourcelink.json
+E:\GymManagement\src\GymManagement.Domain\obj\Debug\net8.0\GymManagement.Domain.csproj.AssemblyReference.cache

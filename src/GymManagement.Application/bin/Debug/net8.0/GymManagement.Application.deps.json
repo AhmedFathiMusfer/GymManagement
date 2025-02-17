@@ -17,6 +17,14 @@
           "GymManagement.Application.dll": {}
         }
       },
+      "Ardalis.SmartEnum/8.2.0": {
+        "runtime": {
+          "lib/net8.0/Ardalis.SmartEnum.dll": {
+            "assemblyVersion": "8.2.0.0",
+            "fileVersion": "8.2.0.0"
+          }
+        }
+      },
       "ErrorOr/2.0.1": {
         "runtime": {
           "lib/net6.0/ErrorOr.dll": {
@@ -65,6 +73,9 @@
         }
       },
       "GymManagement.Domain/1.0.0": {
+        "dependencies": {
+          "Ardalis.SmartEnum": "8.2.0"
+        },
         "runtime": {
           "GymManagement.Domain.dll": {
             "assemblyVersion": "1.0.0",
@@ -79,6 +90,13 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "Ardalis.SmartEnum/8.2.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-P1CLI2okpzHjOJnZMYLnzcyu1/fUJEYK1X4JSnal2TPmovrUTtXK6Sn78D2JgKUdwjSeWddnRveMj+BEZoksvg==",
+      "path": "ardalis.smartenum/8.2.0",
+      "hashPath": "ardalis.smartenum.8.2.0.nupkg.sha512"
     },
     "ErrorOr/2.0.1": {
       "type": "package",

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Security.Cryptography.X509Certificates;
 using Microsoft.Extensions.DependencyInjection;
 using System.Threading.Tasks;
-using GymManagement.Application.Services;
+
 
 namespace GymManagement.Application
 {
@@ -15,6 +15,7 @@ namespace GymManagement.Application
             service.AddMediatR(
                 options => options.RegisterServicesFromAssemblyContaining(typeof(DepedencyInjection))
             );
+
 
             return service;
         }

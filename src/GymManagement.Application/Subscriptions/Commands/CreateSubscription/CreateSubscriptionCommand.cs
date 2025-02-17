@@ -10,6 +10,6 @@ using Microsoft.VisualBasic;
 namespace GymManagement.Application.Subscriptions.Commands.CreateSubscription
 {
     public record CreateSubscriptionCommand(Guid AdminId,
-   string SubscriptionType) : IRequest<ErrorOr<Subscription>>;
+   SubscriptionType SubscriptionType) : IRequest<ErrorOr<Subscription>>;
 
 }

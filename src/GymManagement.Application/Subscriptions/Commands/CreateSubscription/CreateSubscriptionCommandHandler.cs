@@ -22,10 +22,14 @@ namespace GymManagement.Application.Subscriptions.Commands.CreateSubscription
 
         public async Task<ErrorOr<Subscription>> Handle(CreateSubscriptionCommand request, CancellationToken cancellationToken)
         {
-            var subscription = new Subscription()
-            {
-                Id = Guid.NewGuid()
-            };
+            var subscription = new Subscription(
+                id: Guid.NewGuid(),
+                subscriptionType: request.SubscriptionType,
+                adminId: request.AdminId
+
+            );
+
+
             await _subscriptionsRepository.CreateSubscription(subscription);
             await _unitOfWork.CommitChangesAsync();
             return subscription;

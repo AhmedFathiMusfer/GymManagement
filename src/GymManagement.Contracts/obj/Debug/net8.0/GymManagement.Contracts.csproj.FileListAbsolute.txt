@@ -9,3 +9,4 @@ E:\GymManagement\src\GymManagement.Contracts\obj\Debug\net8.0\GymManagement.Cont
 E:\GymManagement\src\GymManagement.Contracts\obj\Debug\net8.0\refint\GymManagement.Contracts.dll
 E:\GymManagement\src\GymManagement.Contracts\obj\Debug\net8.0\GymManagement.Contracts.pdb
 E:\GymManagement\src\GymManagement.Contracts\obj\Debug\net8.0\ref\GymManagement.Contracts.dll
+E:\GymManagement\src\GymManagement.Contracts\obj\Debug\net8.0\GymManagement.Contracts.sourcelink.json
