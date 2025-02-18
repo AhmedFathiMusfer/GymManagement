@@ -9,7 +9,7 @@ using MediatR;
 
 namespace GymManagement.Application.Gyms.Commands.CreateGym
 {
-    public class CreateGymCommandHandler : IRequestHandler<CreatGymCommand, ErrorOr<Gym>>
+    public class CreateGymCommandHandler : IRequestHandler<CreateGymCommand, ErrorOr<Gym>>
     {
         private readonly IGymRepository _gymRepository;
         private readonly IUnitOfWork _unitOfWork;
@@ -20,7 +20,7 @@ namespace GymManagement.Application.Gyms.Commands.CreateGym
             _unitOfWork = unitOfWork;
         }
 
-        public async Task<ErrorOr<Gym>> Handle(CreatGymCommand request, CancellationToken cancellationToken)
+        public async Task<ErrorOr<Gym>> Handle(CreateGymCommand request, CancellationToken cancellationToken)
         {
             var gym = new Gym(name: request.Name, subscriptionId: request.SubscriptionId, maxRooms: 3);
 

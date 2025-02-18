@@ -9,6 +9,7 @@ using GymManagement.Application.Common.Interfaces;
 using GymManagement.Infrastructure.Subscriptions.Persistence;
 using GymManagement.Infrastructure.Common.Persistence;
 using Microsoft.EntityFrameworkCore;
+using GymManagement.Infrastructure.Gyms;
 
 
 namespace GymManagement.Infrastructure
@@ -18,6 +19,7 @@ namespace GymManagement.Infrastructure
         public static IServiceCollection AddInfrastructure(this IServiceCollection service)
         {
             service.AddScoped<ISubscriptionsRepository, SubscriptionRepository>();
+            service.AddScoped<IGymRepository, GymRepository>();
             service.AddDbContext<ApplicationDbContext>(options =>
             options.UseSqlite("Data Source= GymManagement.db")
 

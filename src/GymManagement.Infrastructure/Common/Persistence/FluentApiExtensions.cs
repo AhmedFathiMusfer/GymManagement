@@ -1,6 +1,4 @@
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
-using GymManagement.Infrastructure.Common.Persistence.Converters; // Add this line if the class exists in this namespace
-
 namespace GymManagement.Infrastructure.Common.Persistence;
 
 public static class FluentApiExtensions

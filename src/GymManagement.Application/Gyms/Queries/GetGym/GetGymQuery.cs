@@ -6,9 +6,8 @@ using ErrorOr;
 using GymManagement.Domain.Gyms;
 using MediatR;
 
-namespace GymManagement.Application.Gyms.Commands.CreateGym
+namespace GymManagement.Application.Gyms.Queries.GetGym
 {
-    public record CreatGymCommand(string Name, Guid SubscriptionId) : IRequest<ErrorOr<Gym>>;
-
+    public record GetGymQuery(Guid gymId, Guid subscriptionId) : IRequest<ErrorOr<Gym>>;
 
 }

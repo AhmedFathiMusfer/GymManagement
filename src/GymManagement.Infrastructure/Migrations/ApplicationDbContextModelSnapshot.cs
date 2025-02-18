@@ -17,6 +17,37 @@ namespace GymManagement.Infrastructure.Migrations
 #pragma warning disable 612, 618
             modelBuilder.HasAnnotation("ProductVersion", "9.0.2");
 
+            modelBuilder.Entity("GymManagement.Domain.Gyms.Gym", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<Guid>("SubscriptionId")
+                        .HasColumnType("TEXT");
+
+                    b.Property<int>("_maxRooms")
+                        .HasColumnType("INTEGER")
+                        .HasColumnName("MaxRooms");
+
+                    b.Property<string>("_roomIds")
+                        .IsRequired()
+                        .HasColumnType("TEXT")
+                        .HasColumnName("RoomIds");
+
+                    b.Property<string>("_trainerIds")
+                        .IsRequired()
+                        .HasColumnType("TEXT")
+                        .HasColumnName("TrainerIds");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("gyms");
+                });
+
             modelBuilder.Entity("GymManagement.Domain.Subscriptions.Subscription", b =>
                 {
                     b.Property<Guid>("Id")
@@ -28,6 +59,11 @@ namespace GymManagement.Infrastructure.Migrations
                     b.Property<Guid>("_adminId")
                         .HasColumnType("TEXT")
                         .HasColumnName("AdminId");
+
+                    b.Property<string>("_gymIds")
+                        .IsRequired()
+                        .HasColumnType("TEXT")
+                        .HasColumnName("GymIds");
 
                     b.HasKey("Id");
 
