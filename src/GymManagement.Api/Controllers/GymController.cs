@@ -14,9 +14,9 @@ using Microsoft.VisualBasic;
 
 namespace GymManagement.Api.Controllers
 {
-    [ApiController]
+
     [Route("api/Subscription/{subscriptionId:guid}/Gyms")]
-    public class GymController : ControllerBase
+    public class GymController : ApiController
     {
         private readonly IMediator _mediator;
         public GymController(IMediator mediator)
@@ -26,54 +26,57 @@ namespace GymManagement.Api.Controllers
 
 
         [HttpPost]
-        public async Task<ActionResult> CreateGym(CreateGymRequset requset, Guid subscriptionId)
+        public async Task<IActionResult> CreateGym(CreateGymRequset requset, Guid subscriptionId)
         {
             var createGym = new CreateGymCommand(Name: requset.Name, SubscriptionId: subscriptionId);
             var gym = await _mediator.Send(createGym);
-            return gym.MatchFirst(
-                Gym => Ok(Gym),
-                error => Problem(error.Code)
-            );
+            return gym.Match(
+            gym => CreatedAtAction(
+                nameof(GetGym),
+                new { subscriptionId, GymId = gym.Id },
+                new GymResponse(gym.Id, gym.Name)),
+            Problem);
         }
         [HttpGet("{gymId:guid}")]
-        public async Task<ActionResult> GetGym(Guid gymId, Guid subscriptionId)
+        public async Task<IActionResult> GetGym(Guid gymId, Guid subscriptionId)
         {
             var GetGym = new GetGymQuery(gymId: gymId, subscriptionId: subscriptionId);
-            var gym = await _mediator.Send(GetGym);
-            return gym.MatchFirst(
-                Gym => Ok(Gym),
-                error => Problem(error.Code)
-            );
+            var getGymResult = await _mediator.Send(GetGym);
+            return getGymResult.Match(
+           gym => Ok(new GymResponse(gym.Id, gym.Name)),
+           Problem);
         }
         [HttpGet]
-        public async Task<ActionResult> GetGyms(Guid subscriptionId)
+        public async Task<IActionResult> GetGyms(Guid subscriptionId)
         {
             var ListGym = new ListGymQuery(subscriptionId: subscriptionId);
-            var gym = await _mediator.Send(ListGym);
-            return gym.MatchFirst(
-                listGym => Ok(listGym),
-                error => Problem(error.Code)
-            );
+            var listGymsResult = await _mediator.Send(ListGym);
+            return listGymsResult.Match(
+           gyms => Ok(gyms.ConvertAll(gym => new GymResponse(gym.Id, gym.Name))),
+           Problem);
         }
         [HttpPost("{gymId:guid}/Trainer")]
-        public async Task<ActionResult> AddTrainer(Guid gymId, Guid trainerId, Guid subscriptionId)
+        public async Task<IActionResult> AddTrainer(Guid gymId, AddTrainerRequest request, Guid subscriptionId)
         {
-            var addTrainer = new AddTrainerCommand(gymId: gymId, subscriptionId: subscriptionId, trainerId: trainerId);
-            var gym = await _mediator.Send(addTrainer);
-            return gym.MatchFirst(
-                addTrainer => Ok(addTrainer),
-                error => Problem(error.Code)
-            );
+
+            var addTrainer = new AddTrainerCommand(gymId: gymId, subscriptionId: subscriptionId, trainerId: request.TrainerId);
+            var addTrainerResult = await _mediator.Send(addTrainer);
+
+            return addTrainerResult.Match(
+                success => Ok(),
+                Problem);
         }
         [HttpDelete("{gymId:guid}")]
-        public async Task<ActionResult> DeleteGym(Guid subscriptionId, Guid gymId)
+        public async Task<IActionResult> DeleteGym(Guid subscriptionId, Guid gymId)
         {
+
             var DeleteGym = new DeleteGymCommand(GymId: gymId, SubscriptionId: subscriptionId);
             var Result = await _mediator.Send(DeleteGym);
-            return Result.MatchFirst(
-              result => Ok(result),
-              error => Problem(error.Code)
-          );
+
+            return Result.Match(
+            _ => NoContent(),
+              Problem);
+
 
         }
     }

@@ -1,11 +1,11 @@
 @host=http://localhost:5015
-@adminId=4201345D-51E4-466F-9740-F52C890CAB93
+@adminId=2150E333-8FDC-42A3-9474-1A3956D46DE8
 
 POST {{host}}/api/Subscription
 Content-Type: application/json
 
 {
-    "SubscriptionType": "Starter",
+    "SubscriptionType": "P",
     "AdminId": "{{adminId}}"
 }
 

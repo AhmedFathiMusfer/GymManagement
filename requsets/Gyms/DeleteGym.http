@@ -1,6 +1,6 @@
 @host=http://localhost:5015
-@subscriptionId=3AB4C726-51EA-4E47-B189-14FD7C5A96A8
-@gymId="77067C73-9FEB-48F0-87BB-5D8F070387B0"
+@subscriptionId=5fded736-719c-423d-a068-04c048dab62b
+@gymId=d0cfceb6-675b-490d-9e25-3c97565424fa
 
 
 DELETE {{host}}/api/Subscription/{{subscriptionId}}/Gyms/{{gymId}}

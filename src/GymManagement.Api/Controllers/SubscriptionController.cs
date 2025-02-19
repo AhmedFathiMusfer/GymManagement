@@ -12,12 +12,13 @@ using Microsoft.AspNetCore.OutputCaching;
 using GymManagement.Application.Subscriptions.Queries.GetSubscription;
 
 using DomainSubscriptionType = GymManagement.Domain.Subscriptions.SubscriptionType;
+using GymManagement.Application.Subscriptions.Commands.DeleteSubscription;
 
 namespace GymManagement.Api.Controllers
 {
-    [ApiController]
+
     [Route("api/[controller]")]
-    public class SubscriptionController : ControllerBase
+    public class SubscriptionController : ApiController
     {
         private readonly IMediator _mediator;
 
@@ -28,7 +29,7 @@ namespace GymManagement.Api.Controllers
 
         }
         [HttpPost]
-        public async Task<ActionResult> CreateSubscription(CreateSubscriptionRequest request)
+        public async Task<IActionResult> CreateSubscription(CreateSubscriptionRequest request)
         {
             if (!DomainSubscriptionType.TryFromName(request.SubscriptionType.ToString(), out var subscriptionType))
             {
@@ -40,26 +41,51 @@ namespace GymManagement.Api.Controllers
 
             CreateSubscriptionCommand subscriptionCommand = new(request.AdminId, subscriptionType);
 
-            var CreateSubscriptionResult = await _mediator.Send(subscriptionCommand);
-            return CreateSubscriptionResult.MatchFirst(
-                 subscription => Ok(new SubscriptionResponse(subscription.Id, request.SubscriptionType)),
-                 Error => Problem());
+            var createSubscriptionResult = await _mediator.Send(subscriptionCommand);
+            return createSubscriptionResult.Match(
+            subscription => CreatedAtAction(
+                nameof(GetSubscription),
+                new { subscriptionId = subscription.Id },
+                new SubscriptionResponse(
+                    subscription.Id,
+                    ToDto(subscription.SubscriptionType))),
+            Problem);
 
 
         }
         [HttpGet("{subscriptionId:guid}")]
-        public async Task<ActionResult> GetSubscription(Guid subscriptionId)
+        public async Task<IActionResult> GetSubscription(Guid subscriptionId)
         {
 
             var GetSubscription = new GetSubscriptionQuery(subscriptionId);
-            var GetSubscriptionResult = await _mediator.Send(GetSubscription);
+            var getSubscriptionsResult = await _mediator.Send(GetSubscription);
 
-            return GetSubscriptionResult.MatchFirst(
-                subscription => Ok(new SubscriptionResponse(subscription.Id,
-                Enum.Parse<SubscriptionType>(subscription.SubscriptionType.Name))),
-                error => Problem()
+            return getSubscriptionsResult.Match(
+           subscription => Ok(new SubscriptionResponse(
+               subscription.Id,
+               ToDto(subscription.SubscriptionType))),
+           Problem);
 
-            );
+
+        }
+        [HttpDelete("{subscriptionId:guid}")]
+        public async Task<IActionResult> DeleteSubscription(Guid subscriptionId)
+        {
+            var deleteSubscription = new DeleteSubscriptionCommand(subscriptionId);
+            var deleteSubscriptionResult = await _mediator.Send(deleteSubscription);
+            return deleteSubscriptionResult.Match(
+           _ => NoContent(),
+           Problem);
+        }
+        private static SubscriptionType ToDto(DomainSubscriptionType subscriptionType)
+        {
+            return subscriptionType.Name switch
+            {
+                nameof(DomainSubscriptionType.Free) => SubscriptionType.Free,
+                nameof(DomainSubscriptionType.Starter) => SubscriptionType.Starter,
+                nameof(DomainSubscriptionType.Pro) => SubscriptionType.Pro,
+                _ => throw new InvalidOperationException(),
+            };
         }
     }
 }

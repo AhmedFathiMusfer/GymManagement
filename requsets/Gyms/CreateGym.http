@@ -1,5 +1,5 @@
 @host=http://localhost:5015
-@subscriptionId=3AB4C726-51EA-4E47-B189-14FD7C5A96A8
+@subscriptionId=16e36f64-b1d3-4ad0-8333-dd7ffdc33b67	
 
 
 POST {{host}}/api/Subscription/{{subscriptionId}}/Gyms

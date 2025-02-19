@@ -1,4 +1,4 @@
 @host=http://localhost:5015
-@subscriptionId=378e91b7-76ae-4a2f-bb28-2a475f73c4d2
+@subscriptionId=5fded736-719c-423d-a068-04c048dab62b
 
 GET {{host}}/api/Subscription/{{subscriptionId}}

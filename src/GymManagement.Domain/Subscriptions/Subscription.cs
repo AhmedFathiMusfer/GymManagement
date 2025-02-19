@@ -20,11 +20,13 @@ namespace GymManagement.Domain.Subscriptions
             SubscriptionType subscriptionType,
             Guid adminId,
              Guid? id = null
+
         )
         {
             Id = id ?? Guid.NewGuid();
             AdminId = adminId;
             SubscriptionType = subscriptionType;
+            _maxGyms = GetMaxGyms();
 
         }
         private Subscription()

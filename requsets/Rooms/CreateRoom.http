@@ -1,5 +1,5 @@
 @host=http://localhost:5015
-@gymId=77067C73-9FEB-48F0-87BB-5D8F070387B0
+@gymId=730c30d4-1cb3-4370-80f7-ee23125ed4eb
 POST {{host}}/api/gyms/{{gymId}}/rooms
 Content-Type: application/json
 
