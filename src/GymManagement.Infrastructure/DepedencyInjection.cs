@@ -10,6 +10,7 @@ using GymManagement.Infrastructure.Subscriptions.Persistence;
 using GymManagement.Infrastructure.Common.Persistence;
 using Microsoft.EntityFrameworkCore;
 using GymManagement.Infrastructure.Gyms;
+using GymManagement.Infrastructure.Admins.Presistence;
 
 
 namespace GymManagement.Infrastructure
@@ -20,6 +21,7 @@ namespace GymManagement.Infrastructure
         {
             service.AddScoped<ISubscriptionsRepository, SubscriptionRepository>();
             service.AddScoped<IGymRepository, GymRepository>();
+            service.AddScoped<IAdminRepository, AdminRepository>();
             service.AddDbContext<ApplicationDbContext>(options =>
             options.UseSqlite("Data Source= GymManagement.db")
 

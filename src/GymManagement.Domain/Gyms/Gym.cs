@@ -2,7 +2,9 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using ErrorOr;
 using GymManagement.Domain.Rooms;
+using Throw;
 
 namespace GymManagement.Domain.Gyms
 {
@@ -29,19 +31,19 @@ namespace GymManagement.Domain.Gyms
             Id = id ?? Guid.NewGuid();
         }
 
-        public void AddRoom(Room room)
+        public ErrorOr<Success> AddRoom(Room room)
         {
-            if (_roomIds.Contains(room.Id))
-            {
-                throw new InvalidOperationException("Room already exists in the gym.");
-            }
+
+            _roomIds.Throw().IfContains(room.Id);
 
             if (_roomIds.Count >= _maxRooms)
             {
-                // return GymErrors.CannotHaveMoreRoomsThanSubscriptionAllows;
+                return GymErrors.CannotHaveMoreRoomsThanSubscriptionAllows;
             }
 
             _roomIds.Add(room.Id);
+
+            return Result.Success;
 
 
         }
@@ -51,15 +53,15 @@ namespace GymManagement.Domain.Gyms
             return _roomIds.Contains(roomId);
         }
 
-        public void AddTrainer(Guid trainerId)
+        public ErrorOr<Success> AddTrainer(Guid trainerId)
         {
             if (_trainerIds.Contains(trainerId))
             {
-                //return Conflict(description: "Trainer already added to gym");
+                return Error.Conflict(description: "Trainer already added to gym");
             }
 
             _trainerIds.Add(trainerId);
-
+            return Result.Success;
         }
 
         public void RemoveRoom(Guid roomId)

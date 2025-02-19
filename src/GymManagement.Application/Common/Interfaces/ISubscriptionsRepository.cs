@@ -11,5 +11,6 @@ namespace GymManagement.Application.Common.Interfaces
         Task CreateSubscription(Subscription subscription);
         Task<Subscription?> GetSubscription(Guid subscriptionId);
         Task UpdateSubscription(Subscription subscription);
+        Task RemoveSubscription(Subscription subscription);
     }
 }

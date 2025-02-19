@@ -5,6 +5,7 @@ using System.Reflection;
 using System.Security.Cryptography.X509Certificates;
 using System.Threading.Tasks;
 using GymManagement.Application.Common.Interfaces;
+using GymManagement.Domain.Admins;
 using GymManagement.Domain.Gyms;
 using GymManagement.Domain.Subscriptions;
 using Microsoft.EntityFrameworkCore;
@@ -19,6 +20,7 @@ namespace GymManagement.Infrastructure.Common.Persistence
         }
         public DbSet<Subscription> subscriptions { get; set; }
         public DbSet<Gym> gyms { get; set; }
+        public DbSet<Admin> admins { get; set; }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());

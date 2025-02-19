@@ -72,9 +72,30 @@
           }
         }
       },
+      "OneOf/3.0.216": {
+        "runtime": {
+          "lib/netstandard2.0/OneOf.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Throw/1.4.0": {
+        "dependencies": {
+          "OneOf": "3.0.216"
+        },
+        "runtime": {
+          "lib/net6.0/Throw.dll": {
+            "assemblyVersion": "1.4.0.0",
+            "fileVersion": "1.4.0.0"
+          }
+        }
+      },
       "GymManagement.Domain/1.0.0": {
         "dependencies": {
-          "Ardalis.SmartEnum": "8.2.0"
+          "Ardalis.SmartEnum": "8.2.0",
+          "ErrorOr": "2.0.1",
+          "Throw": "1.4.0"
         },
         "runtime": {
           "GymManagement.Domain.dll": {
@@ -132,6 +153,20 @@
       "sha512": "sha512-MNe7GSTBf3jQx5vYrXF0NZvn6l7hUKF6J54ENfAgCO8y6xjN1XUmKKWG464LP2ye6QqDiA1dkaWEZBYnhoZzjg==",
       "path": "microsoft.extensions.dependencyinjection.abstractions/9.0.2",
       "hashPath": "microsoft.extensions.dependencyinjection.abstractions.9.0.2.nupkg.sha512"
+    },
+    "OneOf/3.0.216": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-hvSxx7O9Z50ZK/HZaqxcEiO1skihnHcsziy0cVRqSq7LrETM9swcRcMZuG+0irai7jq8FYYCHTrB/pSHSah6ug==",
+      "path": "oneof/3.0.216",
+      "hashPath": "oneof.3.0.216.nupkg.sha512"
+    },
+    "Throw/1.4.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-fz2Y+LXepl0obzvZs5PAs2ZnnOF0fIpaErUQMEynMXIxQwnxaKcRgiBiKhCp4Jp2OrSlcKMwgqzAqceWOyl/hg==",
+      "path": "throw/1.4.0",
+      "hashPath": "throw.1.4.0.nupkg.sha512"
     },
     "GymManagement.Domain/1.0.0": {
       "type": "project",

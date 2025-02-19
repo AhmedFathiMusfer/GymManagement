@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "mcXj7/lyBcQ=",
+  "dgSpecHash": "QBQDgRa2Qck=",
   "success": true,
   "projectFilePath": "E:\\GymManagement\\src\\GymManagement.Infrastructure\\GymManagement.Infrastructure.csproj",
   "expectedPackageFiles": [
@@ -37,6 +37,7 @@
     "C:\\Users\\AhmedMusfer\\.nuget\\packages\\microsoft.extensions.options\\9.0.2\\microsoft.extensions.options.9.0.2.nupkg.sha512",
     "C:\\Users\\AhmedMusfer\\.nuget\\packages\\microsoft.extensions.primitives\\9.0.2\\microsoft.extensions.primitives.9.0.2.nupkg.sha512",
     "C:\\Users\\AhmedMusfer\\.nuget\\packages\\mono.texttemplating\\3.0.0\\mono.texttemplating.3.0.0.nupkg.sha512",
+    "C:\\Users\\AhmedMusfer\\.nuget\\packages\\oneof\\3.0.216\\oneof.3.0.216.nupkg.sha512",
     "C:\\Users\\AhmedMusfer\\.nuget\\packages\\sqlitepclraw.bundle_e_sqlite3\\2.1.10\\sqlitepclraw.bundle_e_sqlite3.2.1.10.nupkg.sha512",
     "C:\\Users\\AhmedMusfer\\.nuget\\packages\\sqlitepclraw.core\\2.1.10\\sqlitepclraw.core.2.1.10.nupkg.sha512",
     "C:\\Users\\AhmedMusfer\\.nuget\\packages\\sqlitepclraw.lib.e_sqlite3\\2.1.10\\sqlitepclraw.lib.e_sqlite3.2.1.10.nupkg.sha512",
@@ -56,7 +57,8 @@
     "C:\\Users\\AhmedMusfer\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
     "C:\\Users\\AhmedMusfer\\.nuget\\packages\\system.text.encodings.web\\9.0.2\\system.text.encodings.web.9.0.2.nupkg.sha512",
     "C:\\Users\\AhmedMusfer\\.nuget\\packages\\system.text.json\\9.0.2\\system.text.json.9.0.2.nupkg.sha512",
-    "C:\\Users\\AhmedMusfer\\.nuget\\packages\\system.threading.channels\\7.0.0\\system.threading.channels.7.0.0.nupkg.sha512"
+    "C:\\Users\\AhmedMusfer\\.nuget\\packages\\system.threading.channels\\7.0.0\\system.threading.channels.7.0.0.nupkg.sha512",
+    "C:\\Users\\AhmedMusfer\\.nuget\\packages\\throw\\1.4.0\\throw.1.4.0.nupkg.sha512"
   ],
   "logs": []
 }

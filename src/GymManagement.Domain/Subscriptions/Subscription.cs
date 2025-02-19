@@ -1,19 +1,19 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Security.Cryptography.X509Certificates;
-using System.Threading.Tasks;
+
+using ErrorOr;
+using GymManagement.Domain.Gyms;
+using Throw;
 
 namespace GymManagement.Domain.Subscriptions
 {
     public class Subscription
     {
         public Guid Id { get; }
+        private readonly int _maxGyms;
 
         public SubscriptionType SubscriptionType { get; }
 
-        private readonly Guid _adminId;
 
+        public Guid AdminId { get; }
         private readonly List<Guid> _gymIds = [];
 
         public Subscription(
@@ -23,7 +23,7 @@ namespace GymManagement.Domain.Subscriptions
         )
         {
             Id = id ?? Guid.NewGuid();
-            _adminId = adminId;
+            AdminId = adminId;
             SubscriptionType = subscriptionType;
 
         }
@@ -42,7 +42,46 @@ namespace GymManagement.Domain.Subscriptions
         }
         public void DeleteGym(Guid gymId)
         {
+            _gymIds.Throw().IfNotContains(gymId);
             _gymIds.Remove(gymId);
         }
+
+        public ErrorOr<Success> AddGym(Gym gym)
+        {
+            _gymIds.Throw().IfContains(gym.Id);
+
+            if (_gymIds.Count >= _maxGyms)
+            {
+                return SubscriptionErrors.CannotHaveMoreGymsThanTheSubscriptionAllows;
+            }
+
+            _gymIds.Add(gym.Id);
+
+            return Result.Success;
+        }
+
+        public int GetMaxGyms() => SubscriptionType.Name switch
+        {
+            nameof(SubscriptionType.Free) => 1,
+            nameof(SubscriptionType.Starter) => 1,
+            nameof(SubscriptionType.Pro) => 3,
+            _ => throw new InvalidOperationException()
+        };
+
+        public int GetMaxRooms() => SubscriptionType.Name switch
+        {
+            nameof(SubscriptionType.Free) => 1,
+            nameof(SubscriptionType.Starter) => 3,
+            nameof(SubscriptionType.Pro) => int.MaxValue,
+            _ => throw new InvalidOperationException()
+        };
+
+        public int GetMaxDailySessions() => SubscriptionType.Name switch
+        {
+            nameof(SubscriptionType.Free) => 4,
+            nameof(SubscriptionType.Starter) => int.MaxValue,
+            nameof(SubscriptionType.Pro) => int.MaxValue,
+            _ => throw new InvalidOperationException()
+        };
     }
 }

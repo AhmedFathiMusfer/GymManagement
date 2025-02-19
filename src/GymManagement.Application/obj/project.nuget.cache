@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "SL3/9Ho/MSs=",
+  "dgSpecHash": "zWrUzh0K5Xo=",
   "success": true,
   "projectFilePath": "E:\\GymManagement\\src\\GymManagement.Application\\GymManagement.Application.csproj",
   "expectedPackageFiles": [
@@ -9,7 +9,9 @@
     "C:\\Users\\AhmedMusfer\\.nuget\\packages\\mediatr\\12.4.1\\mediatr.12.4.1.nupkg.sha512",
     "C:\\Users\\AhmedMusfer\\.nuget\\packages\\mediatr.contracts\\2.0.1\\mediatr.contracts.2.0.1.nupkg.sha512",
     "C:\\Users\\AhmedMusfer\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\9.0.2\\microsoft.extensions.dependencyinjection.9.0.2.nupkg.sha512",
-    "C:\\Users\\AhmedMusfer\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\9.0.2\\microsoft.extensions.dependencyinjection.abstractions.9.0.2.nupkg.sha512"
+    "C:\\Users\\AhmedMusfer\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\9.0.2\\microsoft.extensions.dependencyinjection.abstractions.9.0.2.nupkg.sha512",
+    "C:\\Users\\AhmedMusfer\\.nuget\\packages\\oneof\\3.0.216\\oneof.3.0.216.nupkg.sha512",
+    "C:\\Users\\AhmedMusfer\\.nuget\\packages\\throw\\1.4.0\\throw.1.4.0.nupkg.sha512"
   ],
   "logs": []
 }

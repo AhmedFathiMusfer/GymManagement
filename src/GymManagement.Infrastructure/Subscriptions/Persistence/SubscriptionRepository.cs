@@ -30,6 +30,12 @@ namespace GymManagement.Infrastructure.Subscriptions.Persistence
             return await _dbContext.subscriptions.FirstOrDefaultAsync(s => s.Id == subscriptionId);
         }
 
+        public async Task RemoveSubscription(Subscription subscription)
+        {
+            _dbContext.subscriptions.Remove(subscription);
+
+        }
+
         public async Task UpdateSubscription(Subscription subscription)
         {
             _dbContext.subscriptions.Update(subscription);

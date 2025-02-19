@@ -26,8 +26,12 @@ namespace GymManagement.Application.Gyms.Commands.AddTrainer
             {
                 return Error.NotFound(description: "the gym is not found");
             }
-            //After is necssary add vaildition
-            gym.AddTrainer(trainerId: request.trainerId);
+
+            var AddTrainerResult = gym.AddTrainer(trainerId: request.trainerId);
+            if (AddTrainerResult.IsError)
+            {
+                return AddTrainerResult.Errors;
+            }
 
             await _gymRepository.UpdateGymAsync(gym);
             await _unitOfWork.CommitChangesAsync();
