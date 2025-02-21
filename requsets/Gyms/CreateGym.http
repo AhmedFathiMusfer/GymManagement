@@ -1,10 +1,10 @@
 @host=http://localhost:5015
-@subscriptionId=16e36f64-b1d3-4ad0-8333-dd7ffdc33b67	
+@subscriptionId=a9b6b4d6-0505-45b7-b443-e63cad35980b		
 
 
 POST {{host}}/api/Subscription/{{subscriptionId}}/Gyms
 Content-Type: application/json
 
 {
-    "Name": "men"
+    "Name": "6"
 }

@@ -6,6 +6,8 @@
 
   <ItemGroup>
     <PackageReference Include="ErrorOr" Version="2.0.1" />
+    <PackageReference Include="fluentValidation" Version="11.11.0" />
+    <PackageReference Include="fluentValidation.AspNetCore" Version="11.3.0" />
     <PackageReference Include="MediatR" Version="12.4.1" />
     <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="9.0.2" />
   </ItemGroup>

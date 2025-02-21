@@ -24,6 +24,7 @@ namespace GymManagement.Application.Gyms.Commands.CreateGym
 
         public async Task<ErrorOr<Gym>> Handle(CreateGymCommand request, CancellationToken cancellationToken)
         {
+
             var subscription = await _subscriptionsRepository.GetSubscription(request.SubscriptionId);
             if (subscription is null)
             {

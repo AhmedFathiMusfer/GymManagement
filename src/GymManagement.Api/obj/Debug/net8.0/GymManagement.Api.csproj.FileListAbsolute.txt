@@ -172,3 +172,6 @@ E:\GymManagement\src\GymManagement.Api\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAn
 E:\GymManagement\src\GymManagement.Api\bin\Debug\net8.0\Ardalis.SmartEnum.dll
 E:\GymManagement\src\GymManagement.Api\bin\Debug\net8.0\OneOf.dll
 E:\GymManagement\src\GymManagement.Api\bin\Debug\net8.0\Throw.dll
+E:\GymManagement\src\GymManagement.Api\bin\Debug\net8.0\FluentValidation.dll
+E:\GymManagement\src\GymManagement.Api\bin\Debug\net8.0\FluentValidation.AspNetCore.dll
+E:\GymManagement\src\GymManagement.Api\bin\Debug\net8.0\FluentValidation.DependencyInjectionExtensions.dll
