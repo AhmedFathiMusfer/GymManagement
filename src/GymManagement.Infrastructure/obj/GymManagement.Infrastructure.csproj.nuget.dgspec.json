@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\GymManagement\\src\\GymManagement.Infrastructure\\GymManagement.Infrastructure.csproj": {}
+    "e:\\GymManagement\\src\\GymManagement.Infrastructure\\GymManagement.Infrastructure.csproj": {}
   },
   "projects": {
-    "E:\\GymManagement\\src\\GymManagement.Application\\GymManagement.Application.csproj": {
+    "e:\\GymManagement\\src\\GymManagement.Application\\GymManagement.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\GymManagement\\src\\GymManagement.Application\\GymManagement.Application.csproj",
+        "projectUniqueName": "e:\\GymManagement\\src\\GymManagement.Application\\GymManagement.Application.csproj",
         "projectName": "GymManagement.Application",
-        "projectPath": "E:\\GymManagement\\src\\GymManagement.Application\\GymManagement.Application.csproj",
+        "projectPath": "e:\\GymManagement\\src\\GymManagement.Application\\GymManagement.Application.csproj",
         "packagesPath": "C:\\Users\\AhmedMusfer\\.nuget\\packages\\",
-        "outputPath": "E:\\GymManagement\\src\\GymManagement.Application\\obj\\",
+        "outputPath": "e:\\GymManagement\\src\\GymManagement.Application\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\DevExpress 24.1\\Components\\Offline Packages"
@@ -33,8 +33,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "E:\\GymManagement\\src\\GymManagement.Domain\\GymManagement.Domain.csproj": {
-                "projectPath": "E:\\GymManagement\\src\\GymManagement.Domain\\GymManagement.Domain.csproj"
+              "e:\\GymManagement\\src\\GymManagement.Domain\\GymManagement.Domain.csproj": {
+                "projectPath": "e:\\GymManagement\\src\\GymManagement.Domain\\GymManagement.Domain.csproj"
               }
             }
           }
@@ -95,14 +95,14 @@
         }
       }
     },
-    "E:\\GymManagement\\src\\GymManagement.Domain\\GymManagement.Domain.csproj": {
+    "e:\\GymManagement\\src\\GymManagement.Domain\\GymManagement.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\GymManagement\\src\\GymManagement.Domain\\GymManagement.Domain.csproj",
+        "projectUniqueName": "e:\\GymManagement\\src\\GymManagement.Domain\\GymManagement.Domain.csproj",
         "projectName": "GymManagement.Domain",
-        "projectPath": "E:\\GymManagement\\src\\GymManagement.Domain\\GymManagement.Domain.csproj",
+        "projectPath": "e:\\GymManagement\\src\\GymManagement.Domain\\GymManagement.Domain.csproj",
         "packagesPath": "C:\\Users\\AhmedMusfer\\.nuget\\packages\\",
-        "outputPath": "E:\\GymManagement\\src\\GymManagement.Domain\\obj\\",
+        "outputPath": "e:\\GymManagement\\src\\GymManagement.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\DevExpress 24.1\\Components\\Offline Packages"
@@ -149,6 +149,10 @@
               "target": "Package",
               "version": "[2.0.1, )"
             },
+            "MediatR": {
+              "target": "Package",
+              "version": "[12.4.1, )"
+            },
             "Throw": {
               "target": "Package",
               "version": "[1.4.0, )"
@@ -174,14 +178,14 @@
         }
       }
     },
-    "E:\\GymManagement\\src\\GymManagement.Infrastructure\\GymManagement.Infrastructure.csproj": {
+    "e:\\GymManagement\\src\\GymManagement.Infrastructure\\GymManagement.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\GymManagement\\src\\GymManagement.Infrastructure\\GymManagement.Infrastructure.csproj",
+        "projectUniqueName": "e:\\GymManagement\\src\\GymManagement.Infrastructure\\GymManagement.Infrastructure.csproj",
         "projectName": "GymManagement.Infrastructure",
-        "projectPath": "E:\\GymManagement\\src\\GymManagement.Infrastructure\\GymManagement.Infrastructure.csproj",
+        "projectPath": "e:\\GymManagement\\src\\GymManagement.Infrastructure\\GymManagement.Infrastructure.csproj",
         "packagesPath": "C:\\Users\\AhmedMusfer\\.nuget\\packages\\",
-        "outputPath": "E:\\GymManagement\\src\\GymManagement.Infrastructure\\obj\\",
+        "outputPath": "e:\\GymManagement\\src\\GymManagement.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\DevExpress 24.1\\Components\\Offline Packages"
@@ -203,8 +207,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "E:\\GymManagement\\src\\GymManagement.Application\\GymManagement.Application.csproj": {
-                "projectPath": "E:\\GymManagement\\src\\GymManagement.Application\\GymManagement.Application.csproj"
+              "e:\\GymManagement\\src\\GymManagement.Application\\GymManagement.Application.csproj": {
+                "projectPath": "e:\\GymManagement\\src\\GymManagement.Application\\GymManagement.Application.csproj"
               }
             }
           }

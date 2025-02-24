@@ -985,6 +985,7 @@
         "dependencies": {
           "Ardalis.SmartEnum": "8.2.0",
           "ErrorOr": "2.0.1",
+          "MediatR": "12.4.1",
           "Throw": "1.4.0"
         },
         "runtime": {

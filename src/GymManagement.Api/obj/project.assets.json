@@ -1405,6 +1405,7 @@
         "dependencies": {
           "Ardalis.SmartEnum": "8.2.0",
           "ErrorOr": "2.0.1",
+          "MediatR": "12.4.1",
           "Throw": "1.4.0"
         },
         "compile": {
@@ -4045,11 +4046,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\GymManagement\\src\\GymManagement.Api\\GymManagement.Api.csproj",
+      "projectUniqueName": "e:\\GymManagement\\src\\GymManagement.Api\\GymManagement.Api.csproj",
       "projectName": "GymManagement.Api",
-      "projectPath": "E:\\GymManagement\\src\\GymManagement.Api\\GymManagement.Api.csproj",
+      "projectPath": "e:\\GymManagement\\src\\GymManagement.Api\\GymManagement.Api.csproj",
       "packagesPath": "C:\\Users\\AhmedMusfer\\.nuget\\packages\\",
-      "outputPath": "E:\\GymManagement\\src\\GymManagement.Api\\obj\\",
+      "outputPath": "e:\\GymManagement\\src\\GymManagement.Api\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\DevExpress 24.1\\Components\\Offline Packages"
@@ -4071,14 +4072,14 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "E:\\GymManagement\\src\\GymManagement.Application\\GymManagement.Application.csproj": {
-              "projectPath": "E:\\GymManagement\\src\\GymManagement.Application\\GymManagement.Application.csproj"
+            "e:\\GymManagement\\src\\GymManagement.Application\\GymManagement.Application.csproj": {
+              "projectPath": "e:\\GymManagement\\src\\GymManagement.Application\\GymManagement.Application.csproj"
             },
             "E:\\GymManagement\\src\\GymManagement.Contracts\\GymManagement.Contracts.csproj": {
               "projectPath": "E:\\GymManagement\\src\\GymManagement.Contracts\\GymManagement.Contracts.csproj"
             },
-            "E:\\GymManagement\\src\\GymManagement.Infrastructure\\GymManagement.Infrastructure.csproj": {
-              "projectPath": "E:\\GymManagement\\src\\GymManagement.Infrastructure\\GymManagement.Infrastructure.csproj"
+            "e:\\GymManagement\\src\\GymManagement.Infrastructure\\GymManagement.Infrastructure.csproj": {
+              "projectPath": "e:\\GymManagement\\src\\GymManagement.Infrastructure\\GymManagement.Infrastructure.csproj"
             }
           }
         }
@@ -4135,5 +4136,13 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.404/PortableRuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1900",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Error occurred while getting package vulnerability data: Unable to load the service index for source https://api.nuget.org/v3/index.json."
+    }
+  ]
 }

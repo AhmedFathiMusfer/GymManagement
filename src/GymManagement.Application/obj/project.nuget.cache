@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "+iaJpITwyAM=",
+  "dgSpecHash": "dHwgh28Zm84=",
   "success": true,
-  "projectFilePath": "E:\\GymManagement\\src\\GymManagement.Application\\GymManagement.Application.csproj",
+  "projectFilePath": "e:\\GymManagement\\src\\GymManagement.Application\\GymManagement.Application.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\AhmedMusfer\\.nuget\\packages\\ardalis.smartenum\\8.2.0\\ardalis.smartenum.8.2.0.nupkg.sha512",
     "C:\\Users\\AhmedMusfer\\.nuget\\packages\\erroror\\2.0.1\\erroror.2.0.1.nupkg.sha512",
@@ -16,5 +16,12 @@
     "C:\\Users\\AhmedMusfer\\.nuget\\packages\\oneof\\3.0.216\\oneof.3.0.216.nupkg.sha512",
     "C:\\Users\\AhmedMusfer\\.nuget\\packages\\throw\\1.4.0\\throw.1.4.0.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "NU1900",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Error occurred while getting package vulnerability data: Unable to load the service index for source https://api.nuget.org/v3/index.json."
+    }
+  ]
 }

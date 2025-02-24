@@ -33,10 +33,9 @@ namespace GymManagement.Application.Subscriptions.Commands.DeleteSubscription
                 return Error.NotFound(description: "the admin is not found");
             }
             admin.DeleteSubscription(subscription.Id);
-            var GymsToDelete = await _gymRepository.ListBySubscriptionIdAsync(subscription.Id);
+
             await _adminRepository.UpdateAsync(admin);
-            await _subscriptionsRepository.RemoveSubscription(subscription);
-            await _gymRepository.RemoveRangeAsync(GymsToDelete);
+
             await _unitOfWork.CommitChangesAsync();
 
 
