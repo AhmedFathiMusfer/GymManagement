@@ -1,0 +1,16 @@
+e:\GymManagement\tests\TestCommon\bin\Debug\net8.0\TestCommon.deps.json
+e:\GymManagement\tests\TestCommon\bin\Debug\net8.0\TestCommon.dll
+e:\GymManagement\tests\TestCommon\bin\Debug\net8.0\TestCommon.pdb
+e:\GymManagement\tests\TestCommon\bin\Debug\net8.0\GymManagement.Domain.dll
+e:\GymManagement\tests\TestCommon\bin\Debug\net8.0\GymManagement.Domain.pdb
+e:\GymManagement\tests\TestCommon\obj\Debug\net8.0\TestCommon.csproj.AssemblyReference.cache
+e:\GymManagement\tests\TestCommon\obj\Debug\net8.0\TestCommon.GeneratedMSBuildEditorConfig.editorconfig
+e:\GymManagement\tests\TestCommon\obj\Debug\net8.0\TestCommon.AssemblyInfoInputs.cache
+e:\GymManagement\tests\TestCommon\obj\Debug\net8.0\TestCommon.AssemblyInfo.cs
+e:\GymManagement\tests\TestCommon\obj\Debug\net8.0\TestCommon.csproj.CoreCompileInputs.cache
+e:\GymManagement\tests\TestCommon\obj\Debug\net8.0\TestCommon.sourcelink.json
+e:\GymManagement\tests\TestCommon\obj\Debug\net8.0\TestCommon.csproj.Up2Date
+e:\GymManagement\tests\TestCommon\obj\Debug\net8.0\TestCommon.dll
+e:\GymManagement\tests\TestCommon\obj\Debug\net8.0\refint\TestCommon.dll
+e:\GymManagement\tests\TestCommon\obj\Debug\net8.0\TestCommon.pdb
+e:\GymManagement\tests\TestCommon\obj\Debug\net8.0\ref\TestCommon.dll
