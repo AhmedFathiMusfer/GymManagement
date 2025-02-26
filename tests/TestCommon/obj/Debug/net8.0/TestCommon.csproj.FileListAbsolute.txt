@@ -14,3 +14,5 @@ e:\GymManagement\tests\TestCommon\obj\Debug\net8.0\TestCommon.dll
 e:\GymManagement\tests\TestCommon\obj\Debug\net8.0\refint\TestCommon.dll
 e:\GymManagement\tests\TestCommon\obj\Debug\net8.0\TestCommon.pdb
 e:\GymManagement\tests\TestCommon\obj\Debug\net8.0\ref\TestCommon.dll
+E:\GymManagement\tests\TestCommon\bin\Debug\net8.0\GymManagement.Application.dll
+E:\GymManagement\tests\TestCommon\bin\Debug\net8.0\GymManagement.Application.pdb

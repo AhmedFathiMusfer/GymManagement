@@ -1,14 +1,18 @@
 {
   "version": 2,
-  "dgSpecHash": "CPtWvnQdyjw=",
+  "dgSpecHash": "9S9A5onuPGI=",
   "success": true,
   "projectFilePath": "E:\\GymManagement\\tests\\TestCommon\\TestCommon.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\AhmedMusfer\\.nuget\\packages\\ardalis.smartenum\\8.2.0\\ardalis.smartenum.8.2.0.nupkg.sha512",
     "C:\\Users\\AhmedMusfer\\.nuget\\packages\\erroror\\2.0.1\\erroror.2.0.1.nupkg.sha512",
+    "C:\\Users\\AhmedMusfer\\.nuget\\packages\\fluentvalidation\\11.11.0\\fluentvalidation.11.11.0.nupkg.sha512",
+    "C:\\Users\\AhmedMusfer\\.nuget\\packages\\fluentvalidation.aspnetcore\\11.3.0\\fluentvalidation.aspnetcore.11.3.0.nupkg.sha512",
+    "C:\\Users\\AhmedMusfer\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\11.5.1\\fluentvalidation.dependencyinjectionextensions.11.5.1.nupkg.sha512",
     "C:\\Users\\AhmedMusfer\\.nuget\\packages\\mediatr\\12.4.1\\mediatr.12.4.1.nupkg.sha512",
     "C:\\Users\\AhmedMusfer\\.nuget\\packages\\mediatr.contracts\\2.0.1\\mediatr.contracts.2.0.1.nupkg.sha512",
-    "C:\\Users\\AhmedMusfer\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.0\\microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512",
+    "C:\\Users\\AhmedMusfer\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\9.0.2\\microsoft.extensions.dependencyinjection.9.0.2.nupkg.sha512",
+    "C:\\Users\\AhmedMusfer\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\9.0.2\\microsoft.extensions.dependencyinjection.abstractions.9.0.2.nupkg.sha512",
     "C:\\Users\\AhmedMusfer\\.nuget\\packages\\oneof\\3.0.216\\oneof.3.0.216.nupkg.sha512",
     "C:\\Users\\AhmedMusfer\\.nuget\\packages\\throw\\1.4.0\\throw.1.4.0.nupkg.sha512"
   ],
