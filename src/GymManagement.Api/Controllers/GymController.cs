@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using GymManagement.Api.Controllers;
 using GymManagement.Application.Gyms.Commands.AddTrainer;
 using GymManagement.Application.Gyms.Commands.CreateGym;
 using GymManagement.Application.Gyms.Commands.DeleteGym;
@@ -9,6 +10,7 @@ using GymManagement.Application.Gyms.Queries.GetGym;
 using GymManagement.Application.Gyms.Queries.ListGym;
 using GymManagement.Contracts.Gyms;
 using MediatR;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.VisualBasic;
 
@@ -26,6 +28,7 @@ namespace GymManagement.Api.Controllers
 
 
         [HttpPost]
+        [Authorize]
         public async Task<IActionResult> CreateGym(CreateGymRequset requset, Guid subscriptionId)
         {
             var createGym = new CreateGymCommand(Name: requset.Name, SubscriptionId: subscriptionId);

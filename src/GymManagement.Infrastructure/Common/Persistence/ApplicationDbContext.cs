@@ -9,6 +9,7 @@ using GymManagement.Domain.Admins;
 using GymManagement.Domain.Common;
 using GymManagement.Domain.Gyms;
 using GymManagement.Domain.Subscriptions;
+using GymManagement.Domain.Users;
 using MediatR;
 using Microsoft.AspNetCore.Http;
 using Microsoft.EntityFrameworkCore;
@@ -28,6 +29,8 @@ namespace GymManagement.Infrastructure.Common.Persistence
         public DbSet<Subscription> subscriptions { get; set; }
         public DbSet<Gym> gyms { get; set; }
         public DbSet<Admin> admins { get; set; }
+
+        public DbSet<User> users { get; set; }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());

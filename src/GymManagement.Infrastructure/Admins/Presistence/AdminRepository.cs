@@ -16,6 +16,11 @@ namespace GymManagement.Infrastructure.Admins.Presistence
             _dbContext = dbContext;
         }
 
+        public async Task AddAdminAsync(Admin admin)
+        {
+            await _dbContext.admins.AddAsync(admin);
+        }
+
         public async Task<Admin?> GetByIdAsync(Guid adminId)
         {
             return await _dbContext.admins.FirstOrDefaultAsync(a => a.Id == adminId);

@@ -1,0 +1,13 @@
+@host=http://localhost:5015
+@userId=B64DAD96-DDF8-47D2-BC31-E1A9D26BA406
+@token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiTGlvciIsImZhbWlseV9uYW1lIjoiTWFudGluYmFuZCIsImVtYWlsIjoibGlvckBtYW50aW5iYW5kLmNvbSIsImlkIjoiYjY0ZGFkOTYtZGRmOC00N2QyLWJjMzEtZTFhOWQyNmJhNDA2IiwicGVybWlzc2lvbnMiOlsiZ3ltczpjcmVhdGUiLCJneW1zOnVwZGF0ZSJdLCJleHAiOjE3NDA2ODg1ODF9.9N-bl0v7CVTdlIFmHd8SbSFHb8LCkQNyrdthRl916Fc
+
+### Admin
+POST {{host}}/users/{{userId}}/profiles/admin
+Authorization: Bearer {{token}}
+
+### Trainer
+POST {{host}}/users/{{userId}}/profiles/trainer
+
+### Participant
+POST {{host}}/users/{{userId}}/profiles/participant

@@ -1,10 +1,11 @@
 @host=http://localhost:5015
-@subscriptionId=a9b6b4d6-0505-45b7-b443-e63cad35980b		
-
+@subscriptionId=ec4463c7-c455-4c2a-9fa4-f62ef64b8389			
+@token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiTGlvciIsImZhbWlseV9uYW1lIjoiTWFudGluYmFuZCIsImVtYWlsIjoibGlvckBtYW50aW5iYW5kLmNvbSIsImlkIjoiYjY0ZGFkOTYtZGRmOC00N2QyLWJjMzEtZTFhOWQyNmJhNDA2IiwicGVybWlzc2lvbnMiOlsiZ3ltczpjcmVhdGUiLCJneW1zOnVwZGF0ZSJdLCJhZG1pbklkIjoiMGZkZDM3YmItMmU5MC00NjNmLWE4ZGQtNGY0ZGU5YTYxNzVlIiwicm9sZXMiOiJBZG1pbiIsImV4cCI6MTc0MDcwOTI2OH0.18zQICgkwYpPsdpWfTePqRdmA0GSkN1sJhoEmwZU0_Y
 
 POST {{host}}/api/Subscription/{{subscriptionId}}/Gyms
+Authorization: Bearer {{token}}
 Content-Type: application/json
 
 {
-    "Name": "6"
+    "Name": "fgfgfg"
 }

@@ -8,6 +8,8 @@ using ErrorOr;
 using GymManagement.Domain.Gyms;
 using FluentValidation;
 using GymManagement.Application.Common.Behaviors;
+using GymManagement.Application.Common.Interfaces;
+using GymManagement.Application.Common.Models;
 
 
 namespace GymManagement.Application
@@ -20,7 +22,9 @@ namespace GymManagement.Application
                 options =>
                 {
                     options.RegisterServicesFromAssemblyContaining(typeof(DepedencyInjection));
+                    options.AddOpenBehavior(typeof(AuthorizationBehavior<,>));
                     options.AddOpenBehavior(typeof(ValidationBehavior<,>));
+
                 }
 
             );

@@ -175,3 +175,13 @@ E:\GymManagement\src\GymManagement.Api\bin\Debug\net8.0\Throw.dll
 E:\GymManagement\src\GymManagement.Api\bin\Debug\net8.0\FluentValidation.dll
 E:\GymManagement\src\GymManagement.Api\bin\Debug\net8.0\FluentValidation.AspNetCore.dll
 E:\GymManagement\src\GymManagement.Api\bin\Debug\net8.0\FluentValidation.DependencyInjectionExtensions.dll
+E:\GymManagement\src\GymManagement.Api\bin\Debug\net8.0\BCrypt.Net-Next.dll
+E:\GymManagement\src\GymManagement.Api\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+E:\GymManagement\src\GymManagement.Api\bin\Debug\net8.0\Microsoft.Bcl.Memory.dll
+E:\GymManagement\src\GymManagement.Api\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+E:\GymManagement\src\GymManagement.Api\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+E:\GymManagement\src\GymManagement.Api\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+E:\GymManagement\src\GymManagement.Api\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+E:\GymManagement\src\GymManagement.Api\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+E:\GymManagement\src\GymManagement.Api\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+E:\GymManagement\src\GymManagement.Api\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
